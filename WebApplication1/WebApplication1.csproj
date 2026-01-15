@@ -8,6 +8,25 @@
 
     <ItemGroup>
       <Content Remove="Views\Departments\Page1.cshtml" />
+      <Content Remove="Views\Departments\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\DepartmentsController.cs" />
+      <Compile Remove="Views\Departments\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Views\Departments\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Views\Departments\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Departments\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Departments\Page1.cshtml" />
     </ItemGroup>
 
 </Project>
